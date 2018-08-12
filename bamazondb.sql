@@ -1,6 +1,6 @@
-DROP DATABASE bamazondb;
 CREATE DATABASE bamazondb;
 USE bamazondb;
+
 
 CREATE TABLE Inventory(
     ID INT AUTO_INCREMENT NOT NULL,
@@ -11,7 +11,6 @@ CREATE TABLE Inventory(
     primary key(ID)
 );
 
-SELECT * FROM Inventory;
 
 INSERT INTO Inventory(Item, Department, Price, Stock)
 
@@ -31,19 +30,3 @@ VALUES
     ("Chef Knife - Santoku", "FOOD & BEVERAGE", 78.99, 14),
     ("Warcraft III - The Frozen Throne", "GAMES", 19.99, 50),
     ("Pop-Tarts - Cinnamon", "FOOD & BEVERAGE", 4.99, 80)
-
-CREATE TABLE Departments(
-    DeparmentKey INT AUTO_INCREMENT NOT NULL,
-    DepName VARCHAR(60) NOT NULL,
-    Overhead DECIMAL(10,2) NOT NULL,
-    Sales DECIMAL(10,2) NOT NULL,
-    primary key(DeparmentKey)
-);
-
-INSERT INTO Departments(DepName, Overhead, Sales)
-VALUES
-    ("FOOD & BEVERAGE", 1850.00, 2000.00),
-    ("ELECTRONICS", 8200.00, 11000.00),
-    ("CLOTHES", 1500.00, 1200),
-    ("MUSICAL", 3400.00, 3300.00),
-    ("GAMES", 2275.00, 3200.00)

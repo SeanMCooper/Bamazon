@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Storefront made for homework",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanMCooper/Bamazon.git"
+  },
+  "keywords": [
+    "Bamazon",
+    "Student"
+  ],
+  "author": "Sean Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanMCooper/Bamazon/issues"
+  },
+  "homepage": "https://github.com/SeanMCooper/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.1.0",
+    "mysql": "^2.16.0"
+  }
+}
